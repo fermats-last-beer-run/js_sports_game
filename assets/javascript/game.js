@@ -8,6 +8,7 @@ let t1_shotsTaken = document.querySelector("#teamone-numshots");
 let t1_shootButton = document.querySelector("#teamone-shoot-button");
 let t1_goals = document.querySelector("#teamone-numgoals");
 
+// A team object only contains ints
 let team1 = {
   shotsTaken: 0,
   goals: 0
@@ -59,6 +60,7 @@ function reset(){
     team1.shotsTaken = 0;
     team2.goals = 0;
     team2.shotsTaken = 0;
+    resetCounter.innerHTML = Number(resetCounter.innerHTML) + 1
     updateScoreboard();
   }
 }
